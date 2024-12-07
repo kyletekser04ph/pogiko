@@ -19,81 +19,83 @@ module.exports.run = async function ({ api, event, args }) {
 `LIST OF ALL COMMANDS OTHER COMMANDS IS NOT WORKING BECAUSE OF DOWN API AND ERROR INSTALLING ON RENDER
 
 Commands:
+
 1. accept
 2. adobo
 3. aidetect
-4. ashley
-5. ask
+4. ashley [question]
+5. ask [question]
 6. autoseen
-7. bard
-8. besh
+7. bard [question]
+8. besh [question]
 9. bible
-10. blackbox
-11. blue
-12. bot2
-13. codegpt
-14. codm
-15. confess
-16. count
-17. dictionary
-18. element
-19. emojimix
-20. gemini
-21. gemma
-22. gen
-23. gf
-24. goiadminn
-25. gpt3
-26. gpt4
-27. help
-28. hercai
-29. img4
-30. imgur
-31. insult
-32. kickall
-33. leave
-34. liner
-35. listbox
-36. listfriends
-37. llma
-38. meta
-39. miko
-40. mixtral
-41. morphic
-42. music
-43. noti
-44. npm
-45. obfuscate
-46. offbot
-47. out
-48. outall
-49. pastebin
-50. pinterest
-51. poli
-52. pyg
-53. quote
-54. recipe
-55. remini
-56. removebg
-57. restart
-58. reverse
-59. riddle
-60. rizz
-61. say
-62. shoti
-63. sing
-64. stalk
-65. tempm
-66. tiktok
-67. tiksr
-68. tiktok
-69. token
-70. trans
-71. uid
-72. unsend
-73. uptime
-74. wiki
-75. wizard
+10. billboard
+11. blackbox [question]
+12. blue
+13. bot2 [question on image]
+14. codegpt [question]
+15. codm
+16. confess
+17. count
+18. dictionary [question]
+19. element [question]
+20. emojimix 
+21. gemini [question on image]
+22. gemma [question]
+23. gen
+24. gf [question]
+25. goiadminn
+26. gpt3 [question]
+27. gpt4 [question]
+28. hack
+29. help
+30. hercai [question]
+31. img4
+32. imgur
+33. insult
+34. kickall
+35. leave
+36. liner [question]
+37. listbox
+38. listfriends
+39. llma
+40. meta [question]
+41. miko [question]
+42. mixtral [question]
+43. morphic [question]
+44. music
+45. noti
+46. npm
+47. offbot
+48. out
+49. outall
+50. owner
+51. pinterest
+52. poli
+53. pyg
+54. quote
+55. recipe [question]
+56. remini
+57. removebg
+58. restart
+59. reverse
+60. riddle
+61. rizz
+62. say
+63. shoti
+64. sing
+65. stalk
+66. tempm
+67. tiktok
+68. tiksr
+69. tiktok
+70. token
+71. trans
+72. uid
+73. unsend
+74. uptime
+75. wiki [question]
+76. wizard [question]
 
 Events:
 1. randomReact
