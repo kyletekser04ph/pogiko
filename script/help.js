@@ -96,7 +96,7 @@ Commands:
 75. wizard
 
 Events:
-1. randomreact`;
+1. randomReact`;
 
         api.sendMessage(helpText, threadID, messageID);
     } catch (error) {
