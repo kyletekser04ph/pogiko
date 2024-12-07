@@ -96,7 +96,9 @@ Commands:
 75. wizard
 
 Events:
-1. randomReact`;
+1. randomReact
+
+https://autobot-wwbg.onrender.com`;
 
         api.sendMessage(helpText, threadID, messageID);
     } catch (error) {
