@@ -16,7 +16,7 @@ module.exports.run = async function ({ api, event, args }) {
         const { messageID, threadID } = event;
 
         const helpText = 
-`LIST OF ALL COMMANDS
+`LIST OF ALL COMMANDS OTHER COMMANDS IS NOT WORKING BECAUSE OF DOWN API AND ERROR INSTALLING ON RENDER
 
 Commands:
 1. accept
