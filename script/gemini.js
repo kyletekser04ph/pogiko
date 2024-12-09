@@ -18,7 +18,7 @@ module.exports.run = async function ({ api, event, args }) {
     if (!prompt) return api.sendMessage(`Please enter a prompt.`, event.threadID);
     api.sendTypingIndicator(event.threadID);
     try {
-        const geminiApi = `https://hiroshi-api-hub.replit.app`;
+        const geminiApi = `https://api.joshweb.click/gemini?prompt=`;
         if (event.type == "message_reply") {
             if (event.messageReply.attachments[0]?.type == "photo") {
                 url = encodeURIComponent(event.messageReply.attachments[0].url);
