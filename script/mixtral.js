@@ -31,7 +31,7 @@ module.exports.run = async function ({ api, event, args }) {
 
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        const apiUrl = `https://joshweb.click/api/mixtral-8b?q=${encodeURIComponent(prompt)}`;
+        const apiUrl = `https://api.joshweb.click/api/mixtral-8b?q=${encodeURIComponent(prompt)}`;
 
         let attempts = 0;
         let response;
