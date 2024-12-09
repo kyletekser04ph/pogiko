@@ -31,7 +31,7 @@ module.exports.run = async function ({ api, event, args }) {
 
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        const apiUrl = `https://joshweb.click/ai-detect?q=${encodeURIComponent(prompt)}`;
+        const apiUrl = `https://haji-mix.onrender.com/aidetect?text=${encodeURIComponent(prompt)}`;
 
         let attempts = 0;
         let response;
