@@ -7,7 +7,7 @@ module.exports.config = {
     credits: "Juno",
     description: "AI detection",
     usePrefix: false,
-    commandCategory: "GPT3",
+    commandCategory: "AI DETECT",
     cooldowns: 5,
 };
 
