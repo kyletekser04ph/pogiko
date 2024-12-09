@@ -36,7 +36,7 @@ module.exports.run = async function ({ api, event, args }) {
     try {
         await api.sendMessage('Recognizing...', event.threadID);
 
-        const response = await axios.get(`https://joshweb.click/gemini?prompt=${encodeURIComponent(prompt)}&url=${url}`);
+        const response = await axios.get(`https://api.joshweb.click/gemini?prompt=${encodeURIComponent(prompt)}&url=${url}`);
         const description = response.data?.gemini;
 
         if (!description) {
