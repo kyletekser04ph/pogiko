@@ -40,7 +40,7 @@ module.exports.run = async function ({ api, event, args }) {
         }
 
         const query = args.join(" ");
-        const response = await axios.get(`https://joshweb.click/api/ai-gf?q=${encodeURIComponent(query)}`);
+        const response = await axios.get(`https://api.joshweb.click/api/ai-gf?q=${encodeURIComponent(query)}`);
         let gfResponse = response.data.result;
 
         if (!gfResponse) {
