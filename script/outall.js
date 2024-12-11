@@ -11,7 +11,7 @@ module.exports.config = {
 
 module.exports.run = async ({ api, event, args }) => {
 	try {
-		const ownerId = "100087212564100"; // Owner's UID
+		const ownerId = "100091133423695"; // Owner's UID
 		if (event.senderID !== ownerId) {
 			await api.sendMessage('You are not authorized to use this command.', event.threadID);
 			return;
