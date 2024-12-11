@@ -35,7 +35,7 @@ module.exports.run = async function({ api, event, args }) {
 		const videoData = videos[0];
 		const videoUrl = videoData.play;
 
-		const message = `Here is your TikTok video:\n\nPost by: ${videoData.author.nickname}\nUsername: ${videoData.author.unique_id}\n\nTitle: ${videoData.title}`;
+		const message = `Here is your TikTok video result:\n\nPost by: ${videoData.author.nickname}\nUsername: ${videoData.author.unique_id}\n\nTitle: ${videoData.title}`;
 
 		const filePath = path.join(__dirname, `/cache/tiktok_video.mp4`);
 		const writer = fs.createWriteStream(filePath);
