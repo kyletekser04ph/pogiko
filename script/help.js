@@ -19,9 +19,8 @@ module.exports.run = async function ({ api, event, args }) {
 `LIST OF ALL COMMANDS OTHER COMMANDS IS NOT WORKING BECAUSE OF DOWN API AND ERROR INSTALLING ON RENDER
 
 Commands:
-
 1. accept
-2. adobo
+2. adobo [question]
 3. aidetect
 4. ashley [question]
 5. ask [question]
@@ -31,19 +30,19 @@ Commands:
 9. bible
 10. billboard
 11. blackbox [question]
-12. blue
+12. blue [question]
 13. bot2 [question on image]
-14. codegpt [question]
+14. codegpt [question on code]
 15. codm
-16. confess
+16. confess 
 17. count
 18. dictionary [question]
 19. element [question]
-20. emojimix 
+20. emojimix
 21. gemini [question on image]
 22. gemma [question]
 23. gen
-24. gf [question]
+24. gf 
 25. goiadminn
 26. gpt3 [question]
 27. gpt4 [question]
@@ -58,12 +57,12 @@ Commands:
 36. liner [question]
 37. listbox
 38. listfriends
-39. llma
+39. llma [question]
 40. meta [question]
 41. miko [question]
 42. mixtral [question]
 43. morphic [question]
-44. music
+44. music [search music]
 45. noti
 46. npm
 47. offbot
@@ -74,7 +73,7 @@ Commands:
 52. poli
 53. pyg
 54. quote
-55. recipe [question]
+55. recipe
 56. remini
 57. removebg
 58. restart
@@ -86,11 +85,11 @@ Commands:
 64. sing
 65. stalk
 66. tempm
-67. tiktok
-68. tiksr
-69. tiktok
+67. tiksr
+68. tiktok [search]
+69. tikurl [download using url]
 70. token
-71. trans
+71. trans 
 72. uid
 73. unsend
 74. uptime
