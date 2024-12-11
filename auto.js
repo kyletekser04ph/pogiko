@@ -452,18 +452,18 @@ function createConfig() {
       admin: [],
       devMode: false,
       database: false,
-      restartTime: 999999,
+      restartTime: 999999999999,
     },
     fcaOption: {
       forceLogin: true,
       listenEvents: true,
       logLevel: "silent",
       updatePresence: true,
-      selfListen: true,
+      selfListen: false,
       userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64",
       online: true,
-      autoMarkDelivery: false,
-      autoMarkRead: false
+      autoMarkDelivery: true,
+      autoMarkRead: true
     }
   }];
   const dataFolder = './data';
