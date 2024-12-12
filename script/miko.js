@@ -1,26 +1,26 @@
 const axios = require('axios');
 
 module.exports.config = {
- name: "miko",
+ name: "google",
  version: "1.0.0",
  role: 0,
- aliases: ["miko"],
+ aliases: ["google"],
  credits: "cliff",
-cooldown: 0,
-hasPrefix: false,
-	usage: "",
+ cooldown: 0,
+ hasPrefix: false,
+ usage: "",
 };
 
 module.exports.run = async function ({ api, event, args }) {
  const content = encodeURIComponent(args.join(" "));
 
  if (!content) {
-	return api.sendMessage("Please provide your question first.", event.threadID, event.messageID);
+	return api.sendMessage("Please provide your query first.", event.threadID, event.messageID);
  }
 
- api.sendMessage("AI is typing please wait a seconds...", event.threadID, event.messageID); 
+ api.sendMessage("Google is searching, please wait a moment...", event.threadID, event.messageID); 
 
- const apiUrl = `https://bluerepoapislasttry.onrender.com/hercai?content=${content}`;
+ const apiUrl = `https://api.joshweb.click/api/gemma-7b?q=${content}`;
 
  try {
 	const response = await axios.get(apiUrl);
@@ -29,6 +29,6 @@ module.exports.run = async function ({ api, event, args }) {
 	api.sendMessage(reply, event.threadID, event.messageID);
  } catch (error) {
 	console.error("Error fetching data:", error.message);
-	api.sendMessage("An error occurred while processing your request.", event.threadID);
+	api.sendMessage("An error occurred while processing your query.", event.threadID);
  }
 };
