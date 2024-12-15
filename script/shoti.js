@@ -6,16 +6,16 @@ module.exports.config = {
     version: "1.0.0",
     hasPermission: 0,
     description: "random video from Shoti API By Lib API",
-    usePrefix: false,
+    usePrefix: true,
     credits: "Jonell Magallanes",
-    cooldowns: 15,
+    cooldowns: 10,
     commandCategory: "Media",
 };
 
 module.exports.run = async function ({ api, event }) {
     try {
-        const sending = await api.sendMessage("Sending Shoti Video Please Wait....", event.threadID, event.messageID);
-        
+        await api.sendMessage("Sending Shoti Video Please Wait....", event.threadID, event.messageID);
+
         const response = await axios.get('https://betadash-shoti-yazky.vercel.app/shotizxx?apikey=shipazu');
         const data = response.data;
 
@@ -30,15 +30,12 @@ module.exports.run = async function ({ api, event }) {
                 responseType: 'stream'
             });
 
-            api.unsendMessage(sending.messageID);
-
-            const message = `Successfully Sent Shoti!\nTitle: ${title}\nDuration: ${duration}\nUser: ${nickname} (@${username})`;
+            const message = `Successfully Sent Shoti\n\nTitle: ${title}\nDuration: ${duration}\nUser: ${nickname} (@${username})`;
 
             api.sendMessage({
                 body: message,
-                attachment: videoStream.data  
+                attachment: videoStream.data
             }, event.threadID, event.messageID);
-
         } else {
             api.sendMessage(data.message, event.threadID, event.messageID);
         }
