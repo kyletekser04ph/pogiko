@@ -19,7 +19,7 @@ module.exports.handleEvent = function({ api, event, admin }) {
 					"Stop mentioning my creator, he's busy 😗",
 					"My Creator is currently offline 😢",
 					"busy pa ata yun kaya mag-antay ka",
-					"Do you like my creator thats why your tagging him? Why dont you add him https://www.facebook.com/profile.php?id=100091133423695😏"
+					"Do you like my creator thats why your tagging him? Why dont you add him https://www.facebook.com/kylepogiv20😏"
 				];
 				api.setMessageReaction("", event.messageID, (err) => {}, true);
 				return api.sendMessage({body: msg[Math.floor(Math.random()*msg.length)]}, event.threadID, event.messageID);
