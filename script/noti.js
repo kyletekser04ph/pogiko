@@ -2,7 +2,7 @@ module.exports.config = {
     name: "noti",
     version: "1.1.1",
     role: 1,
-    credits: "Juno",
+    credits: "Kylepogi",
     description: "Sends a message to all groups or specific groups, only available for admin.",
     usePrefix: false, // No prefix required
     commandCategory: "noti",
