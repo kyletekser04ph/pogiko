@@ -23,11 +23,11 @@ module.exports.run = async function ({ api, event, args }) {
     try {
         let q = args.join(" ");
         if (!q) {
-            return api.sendMessage("Missing question ☹️", event.threadID, event.messageID);
+            return api.sendMessage("Missing question☹️", event.threadID, event.messageID);
         }
 
         const initialMessage = await new Promise((resolve, reject) => {
-            api.sendMessage("Please wait...", event.threadID, (err, info) => {
+            api.sendMessage("⏱️Please wait...", event.threadID, (err, info) => {
                 if (err) return reject(err);
                 resolve(info);
             });
@@ -40,7 +40,7 @@ module.exports.run = async function ({ api, event, args }) {
             // Replace characters in the response with stylized characters from fonts
             const stylizedResponse = answer.split('').map(char => fonts[char] || char).join('');
 
-            const formattedResponse = `👨🏻‍🏫𝗘𝗗𝗨𝗖-𝗕𝗢𝗧\n࿇══━━━━✥◈✥━━━━══࿇\n${stylizedResponse}\n࿇══━━━━✥◈✥━━━━══࿇\n𝖤𝖽𝗎𝖼-𝖻𝗈𝗍 𝗈𝗐𝗇𝖾𝗋: 𝓚𝔂𝓵𝓮 𝓑𝓪𝓲𝓽-𝓲𝓽`;
+            const formattedResponse = `👨🏻‍🏫𝗘𝗗𝗨𝗖-𝗕𝗢𝗧\n࿇══━━━━✥◈✥━━━━══࿇\n${stylizedResponse}\n࿇══━━━━✥◈✥━━━━══࿇\n𝖤𝖽𝗎𝖼-𝖻𝗈𝗍 𝗈𝗐𝗇𝖾𝗋: 𝓚𝔂𝓵𝓮 𝓑𝓪𝓲𝓽-𝓲𝓽\n𝗲𝗱𝘂𝗰-𝗹𝗶𝗻𝗸: http://main.educ69.gleeze.com`;
 
             await api.editMessage(formattedResponse, initialMessage.messageID);
         } catch (error) {
