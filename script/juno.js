@@ -27,8 +27,7 @@ module.exports.run = async function ({ api, event, args }) {
     if (input.length < 2) {
         const responses = [
             "hiiii",
-            "hello",
-            "juno lang to anong tanong mo sa science?"
+            "hello"
         ];
         const randomResponse = responses[Math.floor(Math.random() * responses.length)];
         api.sendMessage(randomResponse, event.threadID, event.messageID);
