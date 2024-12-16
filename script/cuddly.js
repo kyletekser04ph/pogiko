@@ -1,9 +1,9 @@
 module.exports.config = {
-    name: "juno",
+    name: "cuddly",
     version: "1.0.0",
     role: 0,
     credits: "hexa",
-    description: "juno-ai",
+    description: "Cuddlybot-ai",
     usages: "[ask]",
     cooldown: 2,
     hasPrefix: false,
