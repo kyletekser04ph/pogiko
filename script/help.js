@@ -43,10 +43,10 @@ module.exports.run = async function({ api, event, enableCommands, args, Utils, p
       helpMessage += `𝖳𝗈𝗍𝖺𝗅 ${convertToGothic('𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌')}: ${commands.length}🏷️\n\n`;
 
       for (let i = start; i < Math.min(end, commands.length); i++) {
-        helpMessage += `${convertToGothic(`\t${i + 1}. 「 ${prefix}${commands[i]} 」`)}\n`;
+        helpMessage += `${convertToGothic(`\t${i + 1}. ${prefix}${commands[i]}`)}\n`;
       }
 
-      helpMessage += `\n${convertToGothic('𝖥𝗈𝗋 𝖺𝗅𝗅 𝖼𝗆𝖽𝗌, 𝗍𝗒𝗉𝖾 "𝗁𝖾𝗅𝗉 𝖺𝗅𝗅"')}`;
+      helpMessage += `\n${convertToGothic('𝖥𝗈𝗋 𝖺𝗅𝗅 𝖼𝗆𝖽𝗌, 𝗍𝗒𝗉𝖾 "𝗁𝖾𝗅𝗉 𝖺𝗅𝗅"')}\n\n𝗲𝗱𝘂𝗰𝗯𝗼𝘁-𝗹𝗶𝗻𝗸: https://educational69-pogiko.onrender.com`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
 
     } else if (input.toLowerCase() === 'all') {
@@ -54,7 +54,7 @@ module.exports.run = async function({ api, event, enableCommands, args, Utils, p
       allCommandsMessage += `𝖳𝗈𝗍𝖺𝗅 ${convertToGothic('𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌')}: ${commands.length}🏷️\n\n`;
 
       commands.forEach((cmd, index) => {
-        allCommandsMessage += `${convertToGothic(`\t${index + 1}. 「 ${prefix}${cmd} 」`)}\n`;
+        allCommandsMessage += `${convertToGothic(`\t${index + 1}. ${prefix}${cmd}`)}\n`;
       });
 
       api.sendMessage(allCommandsMessage, event.threadID, event.messageID);
@@ -67,7 +67,7 @@ module.exports.run = async function({ api, event, enableCommands, args, Utils, p
       helpMessage += `𝖳𝗈𝗍𝖺𝗅 ${convertToGothic('𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌')}: ${commands.length}🏷️\n\n`;
 
       for (let i = start; i < Math.min(end, commands.length); i++) {
-        helpMessage += `${convertToGothic(`\t${i + 1}. 「 ${prefix}${commands[i]} 」`)}\n`;
+        helpMessage += `${convertToGothic(`\t${i + 1}. ${prefix}${commands[i]}`)}\n`;
       }
 
       helpMessage += `\nPage ${page} of ${Math.ceil(commands.length / pages)}`;
