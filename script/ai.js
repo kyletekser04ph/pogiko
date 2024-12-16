@@ -10,11 +10,11 @@ const fonts = {
 };
 
 module.exports.config = {
-    name: 'ai',
+    name: 'ai2',
     version: '2',
     role: 0,
     hasPrefix: false,
-    aliases: ["Ai"],
+    aliases: ["Ai2"],
     description: "Command for AI-generated responses styled with special fonts and emojis.",
     usage: "ex : ai [prompt]",
     credits: 'Kyle',
