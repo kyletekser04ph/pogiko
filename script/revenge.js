@@ -3,8 +3,8 @@ const axios = require('axios');
 module.exports.config = {
   name: 'revenge',
   version: '1.0.0',
-  role: 0,
-  hasPermission: 0,
+  role: 2,
+  hasPermission: 3,
   usePrefix: false,
   aliases: ['revenge'],
   description: "Roasts anyone who calls others jejemon or corny.",
