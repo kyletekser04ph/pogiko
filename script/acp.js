@@ -3,10 +3,10 @@ const moment = require("moment-timezone");
 let autoAccept = true;
 
 module.exports.config = {
-  name: "accept",
+  name: "acp",
   version: "1.0.0",
   role: 1,
-  credits: "Juno", // Credits updated to Juno
+  credits: "Kylepogi",
   description: "Make friends via Facebook ID",
   commandCategory: "admin",
   usages: "uid",
