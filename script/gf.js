@@ -4,7 +4,7 @@ module.exports.config = {
     name: "gf",
     version: "1.0.0",
     role: 0,
-    credits: "Juno",
+    credits: "Kylepogi",
     description: "Fetch a response from GF in a formal tone",
     hasPrefix: true,
     aliases: ["gf"],
