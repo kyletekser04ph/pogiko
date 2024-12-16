@@ -1,14 +1,14 @@
 const axios = require('axios');
 
 module.exports.config = {
-    name: "bot2",
+    name: "gemi",
     role: 0,
-    credits: "Juno",
+    credits: "Kyle",
     description: "Interact with Gemini",
     hasPrefix: false,
     version: "1.0.0",
     aliases: ["gemini"],
-    usage: "bot2 [reply to photo]"
+    usage: "gemi [reply to photo]"
 };
 
 module.exports.run = async function ({ api, event, args }) {
