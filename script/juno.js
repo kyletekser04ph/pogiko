@@ -26,14 +26,13 @@ module.exports.run = async function ({ api, event, args }) {
 
     if (input.length < 2) {
         const responses = [
-            "hiiii"
-            "hello"
-            "juno lang to anong tanong mo sa science?",
+            "hiiii",
+            "hello",
+            "juno lang to anong tanong mo sa science?"
         ];
         const randomResponse = responses[Math.floor(Math.random() * responses.length)];
         api.sendMessage(randomResponse, event.threadID, event.messageID);
     } else {
-
         try {
             const prompt = `Talk to me like a best friend who's really smart in science but still chill. Use Taglish, mix Filipino and English, so it’s easy to understand. Focus on science lang, and explain it in a way that's fun and simple. If I talk about something else, just say 'I don't know hehe' and don’t explain more. But when it comes to science, make sure I really get it and dive deep into the concepts. Your name is ${botName}.`;
 
