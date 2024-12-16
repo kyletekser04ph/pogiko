@@ -31,7 +31,7 @@ module.exports.run = async function ({ api, event, args }) {
 
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        const apiUrl = `https://haji-mix.onrender.com/ai?prompt=${encodeURIComponent(prompt)}`;
+        const apiUrl = `https://markdevs-last-api-2epw.onrender.com/api/v2/gpt4?query=${encodeURIComponent(prompt)}`;
 
         let attempts = 0;
         let response;
@@ -40,11 +40,13 @@ module.exports.run = async function ({ api, event, args }) {
                 response = await axios.get(apiUrl);
                 if (response.data && response.data.result) {
                     break;
+                } else {
+                    console.warn(`Invalid response received: ${JSON.stringify(response.data)}`);
                 }
             } catch (error) {
                 attempts++;
+                console.error(`Attempt ${attempts} failed: ${error.message}`);
                 if (attempts >= 3) {
-                    console.error(error);
                     return api.sendMessage(
                         `An error occurred while communicating with the GPT-4 API. Please try again later.`,
                         threadID,
@@ -57,7 +59,6 @@ module.exports.run = async function ({ api, event, args }) {
 
         if (response && response.data && response.data.result) {
             const generatedText = response.data.result;
-
             api.sendMessage(
                 `Answer GPT 4:\n${generatedText}.\n\nType 'clear' to delete the conversation history.`,
                 threadID,
@@ -65,7 +66,7 @@ module.exports.run = async function ({ api, event, args }) {
             );
         } else {
             api.sendMessage(
-                `The response from the server is empty. Please try again later.`,
+                `The response from the server is empty or invalid. Please try again later.`,
                 threadID,
                 messageID
             );
