@@ -5,7 +5,7 @@ module.exports.config = {
     name: "uptime",
     version: "1.0.2",
     role: 0,
-    credits: "Juno",
+    credits: "Kylepogi",
     description: "View bot's uptime with performance stats",
     hasPrefix: false, // Remove prefix
     cooldowns: 5,
@@ -35,17 +35,15 @@ module.exports.run = async ({ api, event }) => {
     };
 
     const timeStart = Date.now();
-    const returnResult = `
-Response:
-Hello Master! Juno, I am still alive for about:
-${days} day(s)
-${hours} hour(s)
-${minutes} minute(s)
-${seconds} second(s).
-CPU Usage: ${usage.cpu.toFixed(1)}% 
-RAM Usage: ${byte2mb(usage.memory)}
-Cores: ${os.cpus().length}
-Ping: ${Date.now() - timeStart}ms
+    const returnResult = `Hello Master! I am still alive.\n\n📡 𝗘𝗗𝗨𝗖-𝗨𝗣𝗧𝗜𝗠𝗘:
+📆${days} day(s)
+⏳${hours} hour(s)
+⏰${minutes} minute(s)
+⏱️${seconds} second(s).
+💿CPU Usage: ${usage.cpu.toFixed(1)}% 
+💽RAM Usage: ${byte2mb(usage.memory)}
+💾Cores: ${os.cpus().length}
+🌐Ping: ${Date.now() - timeStart}ms
 Operating System Platform: ${osInfo.platform}
 System CPU Architecture: ${osInfo.architecture}
 `;
