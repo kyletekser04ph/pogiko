@@ -4,7 +4,7 @@ module.exports.config = {
     name: "aidetect",
     version: "1.0.0",
     hasPermission: 0,
-    credits: "Juno",
+    credits: "Kylepogi",
     description: "AI detection",
     usePrefix: false,
     commandCategory: "AI DETECT",
