@@ -26,32 +26,32 @@ Commands:
 5. ask [question]
 6. autoseen
 7. bard [question]
-8. besh [question]
-9. bible
-10. billboard
-11. blackbox [question]
-12. blue [question]
-13. bot2 [question on image]
-14. codegpt [question on code]
-15. codm
-16. confess 
-17. count
-18. dictionary [question]
-19. element [question]
-20. emojimix
-21. gemini [question on image]
-22. gemma [question]
-23. gen
-24. gf 
-25. goiadminn
-26. gpt3 [question]
-27. gpt4 [question]
-28. hack
-29. help
-30. hercai [question]
-31. img4
-32. imgur
-33. insult
+8. bible
+9. billboard
+10. blackbox [question]
+11. blue [question]
+12. bot2 [question on image]
+13. codegpt [question on code]
+14. codm
+15. confess 
+16. count
+17. dictionary [question]
+18. element [question]
+19. emojimix
+20. gemini [question on image]
+21. gemma [question]
+22. gen
+23. gf 
+24. goiadminn
+25. gpt3 [question]
+26. gpt4 [question]
+27. hack
+28. help
+29. hercai [question]
+30. img4
+31. imgur
+32. insult
+33. juno [question on science]
 34. kickall
 35. leave
 36. liner [question]
@@ -59,7 +59,7 @@ Commands:
 38. listfriends
 39. llma [question]
 40. meta [question]
-41. miko [question]
+41. google
 42. mixtral [question]
 43. morphic [question]
 44. music [search music]
@@ -89,7 +89,7 @@ Commands:
 68. tiktok [search]
 69. tikurl [download using url]
 70. token
-71. trans 
+71. trans [question]
 72. uid
 73. unsend
 74. uptime
