@@ -5,7 +5,7 @@ module.exports["config"] = {
     aliases: ["owner"],
     isPrefix: false,
     info: "Owners Information",
-    credits: "Juno",
+    credits: "Kylepogi",
     cd: 5
 };
 
@@ -15,14 +15,14 @@ module.exports["run"] = async ({ api, event }) => {
     if (!event.isGroup) return chat.reply("Response:");
 
     const response = "Response:\n" +
-        "BOT NAME: Juno Delos Santos\n" +
-        "BOT OWNER: Juno Delos Santos\n" +
+        "BOT NAME: 𝗘𝗗𝗨𝗖𝗔𝗧𝗜𝗢𝗡𝗔𝗟 𝗕𝗢𝗧\n" +
+        "BOT OWNER: Kyle Bait-it\n" +
         "HOBBY: Coding, Programming\n" +
-        "STATUS: Single\n" +
-        "AGE: 15\n" +
-        "SPORTS: Badminton\n" +
+        "STATUS: I have a gf name Lie Ann\n" +
+        "AGE: 20\n" +
+        "SPORTS: Taekwondo,combat Taekwondo,Karate,Soccer,Sepak Takraw\n" +
         "LOCATION: Philippines\n" +
-        "OWNERS LINK: https://www.facebook.com/profile.php?id=100091133423695\n";
+        "OWNERS LINK: https://www.facebook.com/kylepogiv20\n";
 
     chat.reply(response);
 };
