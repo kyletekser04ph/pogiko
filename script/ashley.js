@@ -4,7 +4,7 @@ module.exports.config = {
     name: "ashley",
     version: "1.0.0",
     role: 0,
-    credits: "Juno",
+    credits: "Kylepogi",
     description: "Fetch a response from Ashley",
     hasPrefix: true,
     aliases: ["ash"], // You can leave aliases here if you want them for other purposes
