@@ -1,13 +1,13 @@
 const axios = require("axios");
 
 module.exports.config = {
-    name: "ai2",
+    name: "ai",
     version: "1.0.0",
     credits: "kylepogi",
     description: "Interact with Llama AI",
     hasPrefix: false,
     cooldown: 5,
-    aliases: ["llama"]
+    aliases: ["llama","AI","Ai"]
 };
 
 module.exports.run = async function ({ api, event, args }) {
@@ -28,7 +28,7 @@ module.exports.run = async function ({ api, event, args }) {
             const response = await axios.get(`https://kaiz-apis.gleeze.com/api/gpt-4o?q=${encodeURIComponent(q)}&uid=100`);
             const answer = response.data.response;
 
-            const formattedResponse = `👨🏻‍🏫𝗘𝗗𝗨𝗖-𝗕𝗢𝗧\n࿇══━━━━✥◈✥━━━━══࿇\n${answer}\n\n𝖼𝗋𝖾𝖺𝗍𝖾𝖽 𝖻𝗒 Kyle Bait-it`;
+            const formattedResponse = `👨🏻‍🏫𝗘𝗗𝗨𝗖-𝗕𝗢𝗧\n࿇══━━━━✥◈✥━━━━══࿇\n${answer}\n࿇══━━━━✥◈✥━━━━══࿇\n𝖤𝖽𝗎𝖼-𝖻𝗈𝗍 𝗈𝗐𝗇𝖾𝗋: 𝓚𝔂𝓵𝓮 𝓑𝓪𝓲𝓽-𝓲𝓽`;
 
             await api.editMessage(formattedResponse, initialMessage.messageID);
         } catch (error) {
