@@ -43,7 +43,7 @@ module.exports.run = async function({ api, event, enableCommands, args, Utils, p
       helpMessage += `𝖳𝗈𝗍𝖺𝗅 ${convertToGothic('𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌')}: ${commands.length}🏷️\n\n`;
 
       for (let i = start; i < Math.min(end, commands.length); i++) {
-        helpMessage += `${convertToGothic(`\t${i + 1}. ${prefix}${commands[i]}`)}\n\n𝗲𝗱𝘂𝗰𝗯𝗼𝘁-𝗹𝗶𝗻𝗸: http://main.educ69.gleeze.com/`;
+        helpMessage += `${convertToGothic(`\t${i + 1}. ${prefix}${commands[i]}`)}\n`;
       }
 
       helpMessage += `\n${convertToGothic('𝖥𝗈𝗋 𝖺𝗅𝗅 𝖼𝗆𝖽𝗌, 𝗍𝗒𝗉𝖾 "𝗁𝖾𝗅𝗉 𝖺𝗅𝗅"')}\n\n𝗲𝗱𝘂𝗰𝗯𝗼𝘁-𝗹𝗶𝗻𝗸: http://main.educ69.gleeze.com/`;
