@@ -14,7 +14,7 @@ module.exports.config = {
 
 module.exports.run = async function({ api, args, event, admin }) {
   if (!admin.includes(event.senderID))
-   return api.sendMessage("This Command is only for AUTOBOT owner.", event.threadID, event.messageID); 
+   return api.sendMessage("This Command is only for Educ-bot owner.", event.threadID, event.messageID); 
   var mention = Object.keys(event.mentions)[0];
   let name = event.mentions[mention];
   var arraytag = [];
